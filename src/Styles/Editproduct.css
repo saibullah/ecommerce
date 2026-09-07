@@ -1,0 +1,130 @@
+
+.edit-product-page {
+    min-height: 100vh;
+    background: #f7f7f5;
+}
+
+
+/* HEADER */
+
+.edit-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #999;
+}
+
+.edit-product-page h1 {
+    font-size: 38px;
+    letter-spacing: -1px;
+}
+
+
+/* CARD */
+
+.edit-product-card {
+    max-width: 1050px;
+    margin: auto;
+    background: #fff;
+}
+
+
+/* INPUTS */
+
+.edit-product-page .form-control,
+.edit-product-page .input-group-text {
+    border-color: #e1e1df;
+}
+
+.edit-product-page .form-control {
+    border-radius: 8px;
+}
+
+.edit-product-page .input-group .form-control {
+    border-radius: 0 8px 8px 0;
+}
+
+.edit-product-page .input-group-text {
+    background: #f7f7f5;
+    color: #555;
+}
+
+.edit-product-page .form-control:focus {
+    border-color: #111;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.edit-product-page textarea {
+    resize: vertical;
+}
+
+
+/* IMAGE PREVIEW */
+
+.preview-box {
+    background: #f7f7f5;
+    border: 1px solid #e7e7e5;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.preview-label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #999;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.product-preview {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #eee;
+}
+
+
+/* BUTTON */
+
+.edit-product-page .btn-dark {
+    background: #111;
+    border-color: #111;
+}
+
+.edit-product-page .btn-dark:hover {
+    background: #333;
+    border-color: #333;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+
+    .edit-product-page {
+        padding-bottom: 30px;
+    }
+
+    .edit-product-page h1 {
+        font-size: 30px;
+    }
+
+    .edit-product-card {
+        border-radius: 16px !important;
+    }
+
+    .edit-product-card .card-body {
+        padding: 25px !important;
+    }
+
+    .d-flex.justify-content-end {
+        flex-direction: column-reverse;
+    }
+
+    .d-flex.justify-content-end .btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,198 @@
+
+
+.register-page {
+    min-height: 100vh;
+    background: #f5f5f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 600px;
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.10);
+}
+
+/* LEFT */
+
+.register-info {
+    background: #111111;
+    color: white;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand-name {
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 70px;
+}
+
+.register-info h1 {
+    font-size: 48px;
+    line-height: 1.08;
+    font-weight: 600;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+}
+
+.register-info h1 span {
+    color: #bdbdbd;
+}
+
+.register-info p {
+    color: #a7a7a7;
+    max-width: 350px;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.register-line {
+    width: 50px;
+    height: 1px;
+    background: #555;
+    margin: 45px 0 20px;
+}
+
+.register-info small {
+    color: #777;
+    font-size: 12px;
+}
+
+/* RIGHT */
+
+.register-form-section {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-header {
+    margin-bottom: 35px;
+}
+
+.form-header h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.form-header p {
+    color: #888;
+    font-size: 14px;
+}
+
+/* INPUTS */
+
+.input-group-custom {
+    margin-bottom: 22px;
+}
+
+.input-group-custom label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.input-group-custom input {
+    width: 100%;
+    height: 52px;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    padding: 0 16px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+.input-group-custom input:focus {
+    border-color: #111;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.input-group-custom input::placeholder {
+    color: #aaa;
+}
+
+/* BUTTON */
+
+.create-account-btn {
+    width: 100%;
+    height: 54px;
+    border: none;
+    border-radius: 10px;
+    background: #111;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    margin-top: 8px;
+}
+
+.create-account-btn:hover {
+    background: #2b2b2b;
+    transform: translateY(-1px);
+}
+
+/* LOGIN */
+
+.login-text {
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+.login-text a {
+    color: #111;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .register-card {
+        grid-template-columns: 1fr;
+    }
+
+    .register-info {
+        padding: 40px;
+        min-height: 300px;
+    }
+
+    .brand-name {
+        margin-bottom: 40px;
+    }
+
+    .register-info h1 {
+        font-size: 36px;
+    }
+
+    .register-form-section {
+        padding: 40px 30px;
+    }
+}
+
